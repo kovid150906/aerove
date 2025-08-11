@@ -7,7 +7,7 @@ export const teamData = {
       name: "Jainam",
       role: "OC",
       department: "Leadership",
-      avatar: "photos/Jainam.png",
+      avatar: "photos/Jainam.jpeg",
       social: { instagram: "#", linkedin: "#" }
     },
     {
@@ -15,7 +15,7 @@ export const teamData = {
       name: "Prashant",
       role: "Manager",
       department: "Management",
-      avatar: "photos/Prashant.png",
+      avatar: "photos/Prashant.jpg",
       social: { instagram: "#", linkedin: "#" }
     },
     {
@@ -23,7 +23,7 @@ export const teamData = {
       name: "Jeet",
       role: "Manager",
       department: "Management",
-      avatar: "photos/Jeet.png",
+      avatar: "photos/Jeet.jpeg",
       social: { instagram: "#", linkedin: "#" }
     },
     {
@@ -31,7 +31,7 @@ export const teamData = {
       name: "Anjali",
       role: "Manager",
       department: "Management",
-      avatar: "photos/Anjali.png",
+      avatar: "photos/Anjali.jpeg",
       social: { instagram: "#", linkedin: "#" }
     },
     {
@@ -39,7 +39,7 @@ export const teamData = {
       name: "Viraj",
       role: "Manager",
       department: "Management",
-      avatar: "photos/Viraj.png",
+      avatar: "photos/Viraj.jpg",
       social: { instagram: "#", linkedin: "#" }
     },
     {
@@ -47,7 +47,7 @@ export const teamData = {
       name: "Rohan",
       role: "Lead",
       department: "Mechatronics Subsystem",
-      avatar: "photos/Rohan.png",
+      avatar: "photos/Rohan.jpeg",
       social: { instagram: "#", linkedin: "#" }
     },
     {
@@ -55,7 +55,7 @@ export const teamData = {
       name: "Divig",
       role: "Senior Engineer",
       department: "Mechatronics Subsystem",
-      avatar: "photos/Divig.png",
+      avatar: "photos/Divig.jpeg",
       social: { instagram: "#", linkedin: "#" }
     },
     {
@@ -63,7 +63,7 @@ export const teamData = {
       name: "Jahnavi",
       role: "Member",
       department: "Mechatronics Subsystem",
-      avatar: "photos/Jahnavi.png",
+      avatar: "photos/Jahnavi.jpg",
       social: { instagram: "#", linkedin: "#" }
     },
     {
@@ -71,7 +71,7 @@ export const teamData = {
       name: "Sambhav",
       role: "Member",
       department: "Mechatronics Subsystem",
-      avatar: "photos/Sambhav.png",
+      avatar: "photos/Sambhav.jpeg",
       social: { instagram: "#", linkedin: "#" }
     },
     {
@@ -87,7 +87,7 @@ export const teamData = {
       name: "Prabhakar",
       role: "Senior Engineer",
       department: "Aerodynamic Subsystem",
-      avatar: "photos/Prabhakar.png",
+      avatar: "photos/Prabhakar.jpeg",
       social: { instagram: "#", linkedin: "#" }
     },
     {
@@ -95,7 +95,7 @@ export const teamData = {
       name: "Vijay",
       role: "Member",
       department: "Aerodynamic Subsystem",
-      avatar: "photos/Vijay.png",
+      avatar: "photos/Vijay.jpg",
       social: { instagram: "#", linkedin: "#" }
     },
     {
@@ -103,7 +103,7 @@ export const teamData = {
       name: "Durva",
       role: "Member",
       department: "Aerodynamic Subsystem",
-      avatar: "photos/Durva.png",
+      avatar: "photos/Durva.jpeg",
       social: { instagram: "#", linkedin: "#" }
     },
     {
@@ -111,7 +111,7 @@ export const teamData = {
       name: "Nipun",
       role: "Member",
       department: "Aerodynamic Subsystem",
-      avatar: "photos/Nipun.png",
+      avatar: "photos/Nipun.jpeg",
       social: { instagram: "#", linkedin: "#" }
     },
     {
@@ -119,7 +119,7 @@ export const teamData = {
       name: "Gokul",
       role: "Lead",
       department: "MPC Subsystem",
-      avatar: "photos/Gokul.png",
+      avatar: "photos/Gokul.jpeg",
       social: { instagram: "#", linkedin: "#" }
     },
     {
@@ -127,7 +127,7 @@ export const teamData = {
       name: "Deepak",
       role: "Senior Engineer",
       department: "MPC Subsystem",
-      avatar: "photos/Deepak.png",
+      avatar: "photos/Deepak.jpeg",
       social: { instagram: "#", linkedin: "#" }
     },
     {
@@ -135,7 +135,7 @@ export const teamData = {
       name: "Vihang",
       role: "Member",
       department: "MPC Subsystem",
-      avatar: "photos/Vihang.png",
+      avatar: "photos/Vihang.jpeg",
       social: { instagram: "#", linkedin: "#" }
     },
     {
@@ -143,7 +143,7 @@ export const teamData = {
       name: "Basant",
       role: "Member",
       department: "MPC Subsystem",
-      avatar: "photos/Basant.png",
+      avatar: "photos/Basant.jpeg",
       social: { instagram: "#", linkedin: "#" }
     },
     {
@@ -151,7 +151,7 @@ export const teamData = {
       name: "Anushka",
       role: "Member",
       department: "MPC Subsystem",
-      avatar: "photos/Anushka.png",
+      avatar: "photos/Anushka.jpeg",
       social: { instagram: "#", linkedin: "#" }
     },
     {
@@ -167,7 +167,7 @@ export const teamData = {
       name: "Arpit",
       role: "Member",
       department: "MPC Subsystem",
-      avatar: "photos/Arpit.png",
+      avatar: "photos/Arpit.jpg",
       social: { instagram: "#", linkedin: "#" }
     },
     {
@@ -175,7 +175,7 @@ export const teamData = {
       name: "Daksh",
       role: "Senior Engineer",
       department: "Perception Subsystem",
-      avatar: "photos/Daksh.png",
+      avatar: "photos/Daksh.jpeg",
       social: { instagram: "#", linkedin: "#" }
     },
     {
@@ -183,7 +183,7 @@ export const teamData = {
       name: "Sujay",
       role: "Senior Engineer",
       department: "Perception Subsystem",
-      avatar: "photos/Sujay.png",
+      avatar: "photos/Sujay.jpg",
       social: { instagram: "#", linkedin: "#" }
     },
     {
@@ -191,7 +191,7 @@ export const teamData = {
       name: "Aarav",
       role: "Member",
       department: "Perception Subsystem",
-      avatar: "photos/Aarav.png",
+      avatar: "photos/Aarav.jpeg",
       social: { instagram: "#", linkedin: "#" }
     },
     {
@@ -199,7 +199,7 @@ export const teamData = {
       name: "Megha",
       role: "Member",
       department: "Perception Subsystem",
-      avatar: "photos/Megha.png",
+      avatar: "photos/Megha.jpg",
       social: { instagram: "#", linkedin: "#" }
     },
     {
@@ -207,7 +207,7 @@ export const teamData = {
       name: "Narendra",
       role: "Member",
       department: "Perception Subsystem",
-      avatar: "photos/Narendra.png",
+      avatar: "photos/Narendra.jpg",
       social: { instagram: "#", linkedin: "#" }
     },
     {
@@ -215,7 +215,7 @@ export const teamData = {
       name: "Maitreyee",
       role: "Member",
       department: "Perception Subsystem",
-      avatar: "photos/Maitreyee.png",
+      avatar: "photos/Maitreyee.jpg",
       social: { instagram: "#", linkedin: "#" }
     },
     {
@@ -223,7 +223,7 @@ export const teamData = {
       name: "Joshua",
       role: "Member",
       department: "Perception Subsystem",
-      avatar: "photos/Joshua.png",
+      avatar: "photos/Joshua.jpg",
       social: { instagram: "#", linkedin: "#" }
     },
     {
