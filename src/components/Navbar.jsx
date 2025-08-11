@@ -16,7 +16,7 @@ function Navbar({ setCurrentPage, activePage }) {
     <nav className="navbar">
       <div className="nav-container">
         <a href="#home" className="logo" onClick={() => setCurrentPage('home')}>
-          <div className="logo-icon">A</div>
+          <div className="logo-icon"><img src="AEROVE.png" alt="aerove logo" /></div>
           Aerove
         </a>
         
