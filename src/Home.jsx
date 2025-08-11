@@ -26,11 +26,11 @@ function Home({ setCurrentPage }) {
         <div className="hero-content">
           <div className="partner-logos">
             <div className="partner-logo">
-              <div style={{ width: '60px', height: '60px', background: 'rgba(255,255,255,0.1)', borderRadius: '10px', margin: '0 auto 8px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}><img src="/IITB.jpeg" alt="IITB" /></div>
+              <div style={{ width: '60px', height: '60px', background: 'rgba(255,255,255,0.1)', borderRadius: '10px', margin: '0 auto 8px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}><img src="/IITB-logo.png" alt="IITB-logo" /></div>
               <span>IIT Bombay</span>
             </div>
             <div className="partner-logo">
-              <div style={{ width: '60px', height: '60px', background: 'rgba(255,255,255,0.1)', borderRadius: '10px', margin: '0 auto 8px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}><img src="/UMIC.jpeg" alt="UMIC" /></div>
+              <div style={{ width: '60px', height: '60px', background: 'rgba(255,255,255,0.1)', borderRadius: '10px', margin: '0 auto 8px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}><img src="/UMIC.png" alt="UMIC-logo" /></div>
               <span>UMIC</span>
             </div>
           </div>
