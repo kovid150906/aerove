@@ -16,6 +16,7 @@ function Navbar({ setCurrentPage, activePage }) {
     <nav className="navbar">
       <div className="nav-container">
         <a href="#home" className="logo" onClick={() => setCurrentPage('home')}>
+<<<<<<< HEAD
           <div className="logo-icon">
             <img 
               src="/AEROVE.png" 
@@ -29,6 +30,9 @@ function Navbar({ setCurrentPage, activePage }) {
             />
             <span className="logo-fallback" style={{ display: 'none' }}>A</span>
           </div>
+=======
+          <div className="logo-icon"><img src="AEROVE.png" alt="aerove logo" /></div>
+>>>>>>> 4ba58ef1faf371fcfc58f286aa6b7c5e8b1a6e38
           Aerove
         </a>
         
