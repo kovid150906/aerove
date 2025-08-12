@@ -2,10 +2,6 @@ import { useState } from 'react'
 import { useTheme } from './features/ThemeContext.jsx'
 import Navbar from './components/Navbar.jsx'
 import Footer from './components/Footer.jsx'
-<<<<<<< HEAD
-import TypewriterHeading from './components/TypewriterHeading.jsx'
-=======
->>>>>>> 4ba58ef1faf371fcfc58f286aa6b7c5e8b1a6e38
 import { homeData } from './data/homeData.jsx'
 
 function Home({ setCurrentPage }) {
@@ -39,13 +35,7 @@ function Home({ setCurrentPage }) {
             </div>
           </div>
           
-<<<<<<< HEAD
-          <h1>
-            <TypewriterHeading text={homeData.hero.title} speed={120} />
-          </h1>
-=======
           <h1>{homeData.hero.title}</h1>
->>>>>>> 4ba58ef1faf371fcfc58f286aa6b7c5e8b1a6e38
           <p>{homeData.hero.description}</p>
           
           <div className="hero-buttons">

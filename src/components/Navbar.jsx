@@ -16,23 +16,7 @@ function Navbar({ setCurrentPage, activePage }) {
     <nav className="navbar">
       <div className="nav-container">
         <a href="#home" className="logo" onClick={() => setCurrentPage('home')}>
-<<<<<<< HEAD
-          <div className="logo-icon">
-            <img 
-              src="/AEROVE.png" 
-              alt="aerove logo" 
-              onLoad={() => console.log('Logo image loaded successfully')}
-              onError={(e) => { 
-                console.error('Logo image failed to load'); 
-                e.target.style.display = 'none'; 
-                e.target.nextSibling.style.display = 'block'; 
-              }} 
-            />
-            <span className="logo-fallback" style={{ display: 'none' }}>A</span>
-          </div>
-=======
-          <div className="logo-icon"><img src="AEROVE.png" alt="aerove logo" /></div>
->>>>>>> 4ba58ef1faf371fcfc58f286aa6b7c5e8b1a6e38
+          <div className="logo-icon"><img src="/AEROVE.png" alt="aerove logo" /></div>
           Aerove
         </a>
         

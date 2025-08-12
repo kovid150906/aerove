@@ -3,7 +3,7 @@ function Footer() {
     <footer className="footer">
       <div className="footer-content">
         <div className="footer-logo">
-          <div className="logo-icon">A</div>
+          <div className="logo-icon"><img src="/AEROVE.png" alt="aerove logo" /></div>
           <div>
             <h3>Aerove</h3>
             <p>Advanced Drone Technology Team</p>
