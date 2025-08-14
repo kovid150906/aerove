@@ -1,0 +1,224 @@
+.alumni-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.alumni-page.dark {
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+}
+
+.alumni-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--primary);
+}
+
+.alumni-subtitle {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--text-secondary);
+}
+
+.alumni-timeline {
+  margin: 2rem auto;
+  max-width: 800px;
+  padding: 0 1rem;
+}
+
+.year-group {
+  margin-bottom: 2.5rem;
+}
+
+.year-heading {
+  position: relative;
+  padding-left: 1rem;
+  margin-bottom: 1.5rem;
+  color: var(--primary);
+}
+
+.year-heading::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 4px;
+  background-color: var(--primary);
+}
+
+.alumni-card {
+  display: flex;
+  background: var(--card-bg);
+  border-radius: 16px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.alumni-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(to bottom, var(--primary), var(--primary-dark));
+}
+
+.alumni-card:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+              0 10px 10px -5px rgba(0, 0, 0, 0.04),
+              0 0 20px rgba(66, 134, 244, 0.5);
+  background: color-mix(in srgb, var(--card-bg) 95%, var(--primary));
+  z-index: 1;
+}
+
+.alumni-photo {
+  position: relative;
+  margin-right: 2rem;
+  flex-shrink: 0;
+}
+
+.alumni-photo img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--primary);
+  padding: 2px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.alumni-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.current-position,
+.alumni-role {
+  line-height: 1.4;
+}
+
+.alumni-social {
+  margin-top: 1rem;
+}
+
+.batch-badge {
+  position: absolute;
+  bottom: -5px;
+  right: -5px;
+  background: var(--primary);
+  color: white;
+  padding: 0.2rem 0.5rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+}
+
+.alumni-info {
+  flex-grow: 1;
+}
+
+.alumni-role {
+  color: var(--text-secondary);
+  margin: 0.3rem 0;
+}
+
+.current-position {
+  font-weight: 500;
+  margin: 0.5rem 0;
+}
+
+.alumni-social {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.8rem;
+}
+
+.social-icon {
+  font-size: 1.5rem;
+  color: var(--primary);
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  color: var(--primary-dark);
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 5px rgba(66, 134, 244, 0.5));
+}
+
+
+@media (max-width: 768px) {
+  .alumni-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem;
+  }
+  
+  .alumni-photo {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .alumni-photo img {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .alumni-page {
+    padding: 0 0.5rem;
+  }
+  
+  .alumni-title {
+    font-size: 2rem;
+  }
+  
+  .alumni-subtitle {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .alumni-timeline {
+    padding: 0 0.5rem;
+  }
+  
+  .year-group {
+    margin-bottom: 2rem;
+  }
+  
+  .year-heading {
+    font-size: 1.3rem;
+  }
+  
+  .alumni-info {
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .alumni-card {
+    padding: 1.2rem;
+  }
+  
+  .alumni-photo img {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .alumni-title {
+    font-size: 1.7rem;
+  }
+  
+  .year-heading {
+    font-size: 1.2rem;
+  }
+}

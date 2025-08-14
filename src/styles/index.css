@@ -296,6 +296,24 @@ body {
   transition: all 0.3s ease;
 }
 
+@media (max-width: 768px) {
+  .nav-container {
+    flex-wrap: wrap;
+  }
+  
+  .mobile-toggle-container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .theme-toggle.mobile-toggle,
+  .mobile-menu-btn {
+    display: block;
+  }
+}
+
+
 .mobile-menu-btn:hover {
   background: var(--bg-tertiary);
   color: var(--accent-primary);

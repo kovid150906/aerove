@@ -9,7 +9,8 @@ function Navbar({ setCurrentPage, activePage }) {
     { id: 'home', label: 'Home', icon: '🏠', href: '#home' },
     { id: 'team', label: 'Team', icon: '👥', href: '#team' },
     { id: 'projects', label: 'Projects', icon: '📋', href: '#projects' },
-    { id: 'competitions', label: 'Competitions', icon: '🏆', href: '#competitions' }
+    { id: 'competitions', label: 'Competitions', icon: '🏆', href: '#competitions' },
+    { id: 'alumni', label: 'Alumni', icon: '🎓', href: '#alumni' }
   ]
 
   return (
@@ -24,8 +25,8 @@ function Navbar({ setCurrentPage, activePage }) {
         <ul className="nav-menu">
           {navItems.map(item => (
             <li key={item.id}>
-              <a 
-                href={item.href} 
+              <a
+                href={item.href}
                 className={activePage === item.id ? 'active' : ''}
                 onClick={() => setCurrentPage(item.id)}
               >
@@ -33,20 +34,20 @@ function Navbar({ setCurrentPage, activePage }) {
               </a>
             </li>
           ))}
-          <li>
-            <button className="theme-toggle" onClick={toggleTheme}>
-              {isDarkMode ? '☀️' : '🌙'}
-            </button>
-          </li>
         </ul>
 
-        {/* Mobile menu button */}
-        <button
-          className="mobile-menu-btn"
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-        >
-          ☰
-        </button>
+        {/* Mobile buttons container */}
+        <div className="mobile-toggle-container">
+          <button className="theme-toggle mobile-toggle" onClick={toggleTheme}>
+            {isDarkMode ? '☀️' : '🌙'}
+          </button>
+          <button
+            className="mobile-menu-btn"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          >
+            ☰
+          </button>
+        </div>
       </div>
 
       {/* Mobile Menu */}
@@ -64,11 +65,6 @@ function Navbar({ setCurrentPage, activePage }) {
                 </a>
               </li>
             ))}
-            <li>
-              <button className="theme-toggle" onClick={toggleTheme}>
-                {isDarkMode ? '☀️ Light Mode' : '🌙 Dark Mode'}
-              </button>
-            </li>
           </ul>
         </div>
       )}
