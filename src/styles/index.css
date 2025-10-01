@@ -2407,7 +2407,7 @@ body::before {
     top: 60px;                   /* below navbar */
     right: 0;
     background: var(--bg, white);
-    width: 800px;
+    width: 200px;
     /* height: calc(100vh - 60px); */
     padding: 1rem;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
