@@ -28,7 +28,7 @@ function Projects({ setCurrentPage }) {
         title="Projects - Aerove | Wildlife Conservation, Solar Inspection & SLAM"
         description="Explore Aerove's innovative drone technology projects including WWF wildlife conservation, solar PV farm inspection, advanced SLAM navigation, and award-winning competition drones."
         keywords="Aerove projects, WWF drone conservation, solar panel inspection drone, SLAM navigation, JATAYU quadcopter, VTOL drone, autonomous navigation"
-        url="https://aerove.vercel.app/#projects"
+        url="https://aerove-ts.vercel.app/#projects"
       />
       
       {/* Navigation */}

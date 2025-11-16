@@ -14,7 +14,7 @@ function Alumni({ setCurrentPage }) {
       <SEO 
         title="Alumni - Aerove | IIT Bombay Drone Team Alumni Network"
         description="Meet Aerove's accomplished alumni network from IIT Bombay's premier autonomous drone technology team."
-        url="https://aerove.vercel.app/#alumni"
+        url="https://aerove-ts.vercel.app/#alumni"
       />
       
       <Navbar setCurrentPage={setCurrentPage} activePage="alumni" />

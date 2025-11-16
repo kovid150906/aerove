@@ -4,8 +4,8 @@ const SEO = ({
   title = "Aerove - Advanced Autonomous Drone Technology | IIT Bombay",
   description = "Team Aerove of UMIC, IIT Bombay pioneers autonomous drone technology. We develop cutting-edge aerial robotics for wildlife conservation, solar inspection, and international competitions.",
   keywords = "Aerove, IIT Bombay, IITB, UMIC, drone technology, autonomous drones, aerial robotics, UAV, quadcopter, VTOL, computer vision, machine learning, SLAM, drone competition, ICUAS, wildlife conservation, solar panel inspection",
-  image = "https://aerove.vercel.app/AEROVE.png",
-  url = "https://aerove.vercel.app/"
+  image = "https://aerove-ts.vercel.app/AEROVE.png",
+  url = "https://aerove-ts.vercel.app/"
 }) => {
   return (
     <Helmet>
