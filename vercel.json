@@ -50,18 +50,10 @@
   ],
   "buildCommand": "npm run vercel-build",
   "installCommand": "npm install --legacy-peer-deps",
-  "routes": [
+  "rewrites": [
     {
-      "src": "/sitemap.xml",
-      "dest": "/sitemap.xml"
-    },
-    {
-      "src": "/robots.txt",
-      "dest": "/robots.txt"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/index.html"
+      "source": "/((?!sitemap\\.xml|robots\\.txt|.*\\.(png|jpg|jpeg|gif|svg|mp4|css|js|json)).*)",
+      "destination": "/index.html"
     }
   ]
 }
