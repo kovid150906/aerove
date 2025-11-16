@@ -13,7 +13,7 @@ function Team({ setCurrentPage }) {
       <SEO 
         title="Our Team - Aerove | IIT Bombay Drone Technology"
         description="Meet the brilliant minds behind Aerove's innovative drone technology solutions. Our team includes experts in mechatronics, aerodynamics, machine learning, perception, and controls."
-        url="https://aerove-ts.vercel.app/#team"
+        url="https://aerove-jet.vercel.app/#team"
       />
       
       {/* Navigation */}
