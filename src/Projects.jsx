@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { useTheme } from './features/ThemeContext.jsx'
 import Navbar from './components/Navbar.jsx'
 import Footer from './components/Footer.jsx'
+import SEO from './components/SEO.jsx'
 import { projectsData } from './data/projectsData.jsx'
 
 function Projects({ setCurrentPage }) {
@@ -23,6 +24,13 @@ function Projects({ setCurrentPage }) {
 
   return (
     <div>
+      <SEO 
+        title="Projects - Aerove | Wildlife Conservation, Solar Inspection & SLAM"
+        description="Explore Aerove's innovative drone technology projects including WWF wildlife conservation, solar PV farm inspection, advanced SLAM navigation, and award-winning competition drones."
+        keywords="Aerove projects, WWF drone conservation, solar panel inspection drone, SLAM navigation, JATAYU quadcopter, VTOL drone, autonomous navigation"
+        url="https://aerove.vercel.app/#projects"
+      />
+      
       {/* Navigation */}
       <Navbar setCurrentPage={setCurrentPage} activePage="projects" />
 

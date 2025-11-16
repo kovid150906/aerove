@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { useTheme } from './features/ThemeContext.jsx'
 import Navbar from './components/Navbar.jsx'
 import Footer from './components/Footer.jsx'
+import SEO from './components/SEO.jsx'
 import { teamData } from './data/teamData.jsx'
 
 function Team({ setCurrentPage }) {
@@ -9,6 +10,12 @@ function Team({ setCurrentPage }) {
 
   return (
     <div>
+      <SEO 
+        title="Our Team - Aerove | IIT Bombay Drone Technology"
+        description="Meet the brilliant minds behind Aerove's innovative drone technology solutions. Our team includes experts in mechatronics, aerodynamics, machine learning, perception, and controls."
+        url="https://aerove.vercel.app/#team"
+      />
+      
       {/* Navigation */}
       <Navbar setCurrentPage={setCurrentPage} activePage="team" />
 

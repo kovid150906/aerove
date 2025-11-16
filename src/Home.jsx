@@ -3,6 +3,7 @@ import { useTheme } from './features/ThemeContext.jsx'
 import Navbar from './components/Navbar.jsx'
 import Footer from './components/Footer.jsx'
 import TypewriterHeading from './components/TypewriterHeading.jsx'
+import SEO from './components/SEO.jsx'
 import { homeData } from './data/homeData.jsx'
 
 function Home({ setCurrentPage }) {
@@ -10,6 +11,12 @@ function Home({ setCurrentPage }) {
 
   return (
     <div>
+      <SEO 
+        title="Aerove - Advanced Autonomous Drone Technology | IIT Bombay"
+        description="Team Aerove of UMIC, IIT Bombay pioneers autonomous drone technology. We develop cutting-edge aerial robotics for wildlife conservation, solar inspection, and international competitions."
+        url="https://aerove.vercel.app/"
+      />
+      
       {/* Navigation */}
       <Navbar setCurrentPage={setCurrentPage} activePage="home" />
 

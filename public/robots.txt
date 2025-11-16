@@ -1,0 +1,11 @@
+# robots.txt for Aerove IIT Bombay
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /private
+
+# Sitemap location
+Sitemap: https://aerove.vercel.app/sitemap.xml
+
+# Crawl-delay for polite crawlers
+Crawl-delay: 1

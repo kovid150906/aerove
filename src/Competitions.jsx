@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { useTheme } from './features/ThemeContext.jsx'
 import Navbar from './components/Navbar.jsx'
 import Footer from './components/Footer.jsx'
+import SEO from './components/SEO.jsx'
 import { competitionsData } from './data/competitionsData.jsx'
 
 function Competitions({ setCurrentPage }) {
@@ -9,6 +10,13 @@ function Competitions({ setCurrentPage }) {
 
   return (
     <div>
+      <SEO 
+        title="Competitions - Aerove | ICUAS, UAS, CUASC & RI4Rover Winners"
+        description="Aerove's achievements in international drone competitions: 1st Worldwide ICUAS '23, Global Rank 6 UAS '23, 1st Place RI4Rover, and CUASC '24 VTOL demonstration."
+        keywords="ICUAS 2023, UAS competition, drone competition winners, CUASC VTOL, RI4Rover, autonomous UAV competition, aerial robotics competition"
+        url="https://aerove.vercel.app/#competitions"
+      />
+      
       {/* Navigation */}
       <Navbar setCurrentPage={setCurrentPage} activePage="competitions" />
 

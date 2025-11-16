@@ -1,6 +1,7 @@
 import { useTheme } from './features/ThemeContext.jsx'
 import Navbar from './components/Navbar.jsx'
 import Footer from './components/Footer.jsx'
+import SEO from './components/SEO.jsx'
 import { alumniData } from './data/alumniData.jsx'
 import './styles/alumniStyles.css'
 import { FaLinkedin, FaInstagram } from 'react-icons/fa'
@@ -10,6 +11,12 @@ function Alumni({ setCurrentPage }) {
 
   return (
     <div className={`alumni-page ${isDarkMode ? 'dark' : ''}`}>
+      <SEO 
+        title="Alumni - Aerove | IIT Bombay Drone Team Alumni Network"
+        description="Meet Aerove's accomplished alumni network from IIT Bombay's premier autonomous drone technology team."
+        url="https://aerove.vercel.app/#alumni"
+      />
+      
       <Navbar setCurrentPage={setCurrentPage} activePage="alumni" />
 
       <section id="alumni">
