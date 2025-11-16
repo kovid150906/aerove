@@ -14,7 +14,7 @@ function Home({ setCurrentPage }) {
       <SEO 
         title="Aerove - Advanced Autonomous Drone Technology | IIT Bombay"
         description="Team Aerove of UMIC, IIT Bombay pioneers autonomous drone technology. We develop cutting-edge aerial robotics for wildlife conservation, solar inspection, and international competitions."
-        url="https://aerove-ts.vercel.app/"
+        url="https://aerove-jet.vercel.app/"
       />
       
       {/* Navigation */}

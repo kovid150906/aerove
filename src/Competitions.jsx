@@ -14,7 +14,7 @@ function Competitions({ setCurrentPage }) {
         title="Competitions - Aerove | ICUAS, UAS, CUASC & RI4Rover Winners"
         description="Aerove's achievements in international drone competitions: 1st Worldwide ICUAS '23, Global Rank 6 UAS '23, 1st Place RI4Rover, and CUASC '24 VTOL demonstration."
         keywords="ICUAS 2023, UAS competition, drone competition winners, CUASC VTOL, RI4Rover, autonomous UAV competition, aerial robotics competition"
-        url="https://aerove-ts.vercel.app/#competitions"
+        url="https://aerove-jet.vercel.app/#competitions"
       />
       
       {/* Navigation */}
