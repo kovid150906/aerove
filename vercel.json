@@ -49,11 +49,5 @@
     }
   ],
   "buildCommand": "npm run vercel-build",
-  "installCommand": "npm install --legacy-peer-deps",
-  "rewrites": [
-    {
-      "source": "/((?!sitemap\\.xml|robots\\.txt|.*\\.(png|jpg|jpeg|gif|svg|mp4|css|js|json)).*)",
-      "destination": "/index.html"
-    }
-  ]
+  "installCommand": "npm install --legacy-peer-deps"
 }
