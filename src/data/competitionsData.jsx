@@ -1,103 +1,158 @@
 export const competitionsData = {
   title: "Our Competitions",
-  subtitle: "Showcasing our achievements in international and national drone technology competitions",
+  subtitle:
+    "Team AeRoVe represents IIT Bombay at premier international aerial robotics competitions, achieving top global ranks through rigorous engineering and autonomous system design.",
+
   competitions: [
     {
       id: 1,
-      name: "International Aerial Robotics Competition (IARC)",
+      name: "Ri4Rover 2024 (Drone Class)",
       year: "2024",
-      location: "Atlanta, Georgia, USA",
-      status: "Ongoing",
-      description: "The longest-running aerial robotics competition in the world, challenging teams to develop autonomous aerial vehicles capable of complex missions.",
-      image: "🏆",
-      team: "Full Aerove Team",
+      location: "Purdue University, USA",
+      status: "Completed",
+      description:
+        "An international autonomous aerial robotics competition focused on GPS-denied planetary exploration scenarios.",
+      image: "🚁",
       achievements: [
-        "Advanced autonomous navigation system",
-        "Real-time obstacle avoidance",
-        "Precision payload delivery",
-        "Innovative mothership-daughter drone concept"
+        "1st place globally in Drone Class",
+        "Lowest flight time among all competitors (15.54 seconds)",
+        "Completed all software milestones successfully"
       ],
       challenges: [
-        "Complex mission requirements",
-        "Limited time constraints",
-        "International competition pressure",
-        "Technical innovation requirements"
+        "GPS-denied maze environment",
+        "Real-time obstacle avoidance",
+        "Fast and reliable localization"
       ],
-      technologies: ["ROS", "Computer Vision", "PID Control", "SLAM", "Machine Learning"],
-      results: "Top 10 Finalist",
-      impact: "Established Aerove as a leading drone technology team globally"
+      technologies: [
+        "2D LiDAR",
+        "Grid-based SLAM",
+        "A* Path Planning",
+        "Autonomous Navigation"
+      ],
+      results: "1st Place Globally",
+      impact:
+        "Demonstrated robust autonomous navigation for planetary exploration missions."
     },
+
     {
       id: 2,
-      name: "AUVSI Student Unmanned Aerial Systems Competition",
-      year: "2023",
-      location: "Maryland, USA",
+      name: "CUASC 2024 – Californian Unmanned Aerial Systems Competition",
+      year: "2024",
+      location: "California, USA",
       status: "Completed",
-      description: "Annual competition challenging university students to design, build, and fly unmanned aerial systems.",
-      image: "🚁",
-      team: "Aerove Core Team",
+      description:
+        "An international UAV competition emphasizing aircraft design, mission autonomy, and payload delivery.",
+      image: "✈️",
       achievements: [
-        "Best Technical Innovation Award",
-        "Autonomous flight demonstration",
-        "Advanced payload integration",
-        "Reliable communication systems"
+        "Won Aircraft Design Award",
+        "Autonomous VTOL takeoff, transition and cruise",
+        "Vision-based precision payload delivery"
       ],
       challenges: [
-        "Weather conditions",
-        "Flight time limitations",
-        "Payload weight constraints",
-        "Communication range requirements"
+        "VTOL stability and cruise efficiency trade-off",
+        "Precise payload deployment",
+        "Energy-aware mission execution"
       ],
-      technologies: ["Arduino", "GPS", "Telemetry", "Flight Controller", "Camera Systems"],
-      results: "2nd Place Overall",
-      impact: "Recognition for technical excellence and innovation"
+      technologies: [
+        "QuadPlane VTOL (4+1 Configuration)",
+        "Carbon Fiber Composites",
+        "Computer Vision",
+        "Raspberry Pi 4B"
+      ],
+      results: "1st Place – Aircraft Design Award",
+      impact:
+        "Validated AeRoVe’s VTOL aircraft design and mission autonomy capabilities."
     },
+
     {
       id: 3,
-      name: "IIT Bombay Techfest",
-      year: "2023",
-      location: "Mumbai, India",
+      name: "RoboDrive 2024 (ICRA)",
+      year: "2024",
+      location: "ICRA – International Conference",
       status: "Completed",
-      description: "Asia's largest college technical festival featuring robotics and drone competitions.",
-      image: "🎓",
-      team: "Aerove Innovation Team",
+      description:
+        "A global autonomous perception challenge focusing on robust multi-modal object detection under sensor degradation.",
+      image: "🤖",
       achievements: [
-        "Best Design Award",
-        "Innovative drone concept",
-        "Technical presentation excellence",
-        "Student engagement and outreach"
+        "4th rank globally among international teams",
+        "NuScenes Detection Score (NDS) of 42.79%",
+        "Outperformed baseline BEVFusion without retraining"
       ],
       challenges: [
-        "Local competition standards",
-        "Presentation requirements",
-        "Technical documentation",
-        "Student audience engagement"
+        "Random sensor failures",
+        "Robust perception under corrupted data",
+        "Generalization across sensing configurations"
       ],
-      technologies: ["SolidWorks", "3D Printing", "Electronics", "Programming", "Documentation"],
-      results: "1st Place - Best Design",
-      impact: "Enhanced team reputation within IIT Bombay and broader technical community"
+      technologies: [
+        "BEVFusion",
+        "Modality-Agnostic Feature Sampler (MAFS)",
+        "LiDAR and Camera Sensor Fusion"
+      ],
+      results: "4th Place Globally",
+      impact:
+        "Demonstrated state-of-the-art robustness in autonomous perception systems."
+    },
+
+    {
+      id: 4,
+      name: "ICUAS 2023",
+      year: "2023",
+      location: "Poland",
+      status: "Completed",
+      description:
+        "International competition featuring simulation and hardware challenges for autonomous aerial systems.",
+      image: "🌍",
+      achievements: [
+        "World Rank 1 in Simulation Challenge",
+        "World Rank 3 in Hardware Challenge"
+      ],
+      challenges: [
+        "Simulation-to-hardware transfer",
+        "Robust autonomous flight control"
+      ],
+      technologies: [
+        "Autonomous Flight Control",
+        "Simulation-based Testing",
+        "Hardware Integration"
+      ],
+      results: "World Rank 1 (Simulation), Rank 3 (Hardware)",
+      impact:
+        "Established AeRoVe’s strength in both simulated and real-world UAV systems."
+    },
+
+    {
+      id: 5,
+      name: "UAS Challenge 2023",
+      year: "2023",
+      location: "United Kingdom",
+      status: "Completed",
+      description:
+        "A prestigious UAV competition emphasizing safe design, autonomy, and mission reliability.",
+      image: "🏆",
+      achievements: [
+        "Advancement Award",
+        "Design Award",
+        "Scrutineers Award"
+      ],
+      challenges: [
+        "Strict safety constraints",
+        "High mission reliability requirements"
+      ],
+      technologies: [
+        "Fixed-wing UAV Design",
+        "Autonomous Mission Planning",
+        "System Safety Validation"
+      ],
+      results:
+        "Advancement Award, Design Award, Scrutineers Award",
+      impact:
+        "International recognition for UAV design quality and execution."
     }
   ],
+
   stats: [
-    {
-      icon: "🏆",
-      number: "3",
-      label: "Competitions"
-    },
-    {
-      icon: "🥇",
-      number: "2",
-      label: "Awards Won"
-    },
-    {
-      icon: "🌍",
-      number: "2",
-      label: "Countries"
-    },
-    {
-      icon: "👥",
-      number: "12",
-      label: "Team Members"
-    }
+    { icon: "🏆", number: "5", label: "International Competitions" },
+    { icon: "🥇", number: "6", label: "Global Podium Finishes" },
+    { icon: "🌍", number: "6", label: "Countries Represented" }
   ]
 }

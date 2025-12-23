@@ -1,61 +1,47 @@
 export const alumniData = {
-  title: "Our Alumni Network",
-  subtitle: "Where our former members are now",
-  years: [
+  title: "Our Alumni",
+  subtitle:
+    "AeRoVe alumni have gone on to pursue careers and higher studies at leading global organizations and universities.",
+
+  alumni: [
     {
-      year: "2024",
-      members: [
-        {
-          id: 1,
-          name: "Arpit Sharma",
-          avatar: "photos/Arpit.jpg",
-          role: "Former Team Lead",
-          batch: "2024",
-          currentPosition: "Drone Engineer @ TechDrones",
-          social: { linkedin: "#", instagram: "#" }
-        },
-        {
-          id: 2,
-          name: "Megha Patel",
-          avatar: "photos/Megha.jpg",
-          role: "Former Aerodynamics Lead",
-          batch: "2024",
-          currentPosition: "Aerospace Engineer @ SkyTech",
-          social: { linkedin: "#", instagram: "#" }
-        },
-        {
-          id: 3,
-          name: "Nipun Verma",
-          avatar: "photos/Nipun.jpeg",
-          role: "Avionics Specialist",
-          batch: "2024",
-          currentPosition: "Embedded Systems Engineer @ AviaTech",
-          social: { linkedin: "#", instagram: "#" }
-        }
-      ]
+      id: 1,
+      name: "Mahesh Bhupati",
+      destination: "Sony Japan",
+      image: "/photos/Mahesh_Bhupati.png"
     },
     {
-      year: "2023",
-      members: [
-        {
-          id: 4,
-          name: "Vijay Kumar",
-          avatar: "photos/Vijay.jpg",
-          role: "Founding Member",
-          batch: "2023",
-          currentPosition: "CTO @ DroneStart",
-          social: { linkedin: "#", instagram: "#" }
-        },
-        {
-          id: 5,
-          name: "Jahnavi Iyer",
-          avatar: "photos/Jahnavi.jpg",
-          role: "Design Lead",
-          batch: "2023",
-          currentPosition: "Product Designer @ AeroDesign",
-          social: { linkedin: "#", instagram: "#" }
-        }
-      ]
+      id: 2,
+      name: "Shardul Kher",
+      destination: "University of Michigan",
+      image: "/photos/Shardul_Kher.png"
+    },
+    {
+      id: 3,
+      name: "Saad Khan",
+      destination: "OLA",
+      image: "/photos/Saad_Khan.png"
+    },
+    {
+      id: 4,
+      name: "Swadhin Dash",
+      destination: "Quadeye",
+      batch: "2025",
+      image: "/photos/Swadhin_Dash.png"
+    },
+    {
+      id: 5,
+      name: "Aayushi Barve",
+      destination: "EPFL",
+      batch: "2025",
+      image: "/photos/Aayushi_Barve.png"
+    },
+    {
+      id: 6,
+      name: "Joel Anto Paul",
+      destination: "University of Texas at Austin",
+      batch: "2025",
+      image: "/photos/Joel_Anto_Paul.png"
     }
   ]
 }

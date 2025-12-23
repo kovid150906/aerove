@@ -1,26 +1,19 @@
-import { useState } from 'react'
-import { useTheme } from './features/ThemeContext.jsx'
 import Navbar from './components/Navbar.jsx'
 import Footer from './components/Footer.jsx'
 import SEO from './components/SEO.jsx'
 import { competitionsData } from './data/competitionsData.jsx'
 
 function Competitions({ setCurrentPage }) {
-  const { isDarkMode, toggleTheme } = useTheme()
-
   return (
     <div>
-      <SEO 
-        title="Competitions - Aerove | ICUAS, UAS, CUASC & RI4Rover Winners"
-        description="Aerove's achievements in international drone competitions: 1st Worldwide ICUAS '23, Global Rank 6 UAS '23, 1st Place RI4Rover, and CUASC '24 VTOL demonstration."
-        keywords="ICUAS 2023, UAS competition, drone competition winners, CUASC VTOL, RI4Rover, autonomous UAV competition, aerial robotics competition"
+      <SEO
+        title="Competitions | Team AeRoVe, IIT Bombay"
+        description="Team AeRoVe (UMIC, IIT Bombay) at international aerial robotics competitions including Ri4Rover, CUASC, RoboDrive (ICRA), ICUAS and UAS Challenge."
         url="https://aerove-jet.vercel.app/#competitions"
       />
-      
-      {/* Navigation */}
+
       <Navbar setCurrentPage={setCurrentPage} activePage="competitions" />
 
-      {/* Competitions Page Content */}
       <div className="projects-page">
         <div className="container">
           <div className="projects-header">
@@ -29,71 +22,39 @@ function Competitions({ setCurrentPage }) {
           </div>
 
           <div className="projects-grid">
-            {competitionsData.competitions.map(competition => (
-              <div key={competition.id} className="project-card">
-                <div className="project-image">{competition.image}</div>
-                <div className="project-title">{competition.name}</div>
-                <div className="project-description">{competition.description}</div>
-                
+            {competitionsData.competitions.map(c => (
+              <div key={c.id} className="project-card">
+                <div className="project-image">{c.image}</div>
+                <div className="project-title">{c.name}</div>
+                <div className="project-description">{c.description}</div>
+
                 <div className="project-details expanded">
                   <h4>Competition Details</h4>
                   <ul>
-                    <li><strong>Year:</strong> {competition.year}</li>
-                    <li><strong>Location:</strong> {competition.location}</li>
-                    <li><strong>Status:</strong> {competition.status}</li>
-                    <li><strong>Team:</strong> {competition.team}</li>
-                    <li><strong>Result:</strong> {competition.results}</li>
+                    <li><strong>Year:</strong> {c.year}</li>
+                    <li><strong>Location:</strong> {c.location}</li>
+                    <li><strong>Status:</strong> {c.status}</li>
+                    <li><strong>Result:</strong> {c.results}</li>
                   </ul>
-                  
+
                   <h4>Technologies Used</h4>
-                  <ul>
-                    {competition.technologies.map((tech, index) => (
-                      <li key={index}>{tech}</li>
-                    ))}
-                  </ul>
-                  
+                  <ul>{c.technologies.map((t, i) => <li key={i}>{t}</li>)}</ul>
+
                   <h4>Key Achievements</h4>
-                  <ul>
-                    {competition.achievements.map((achievement, index) => (
-                      <li key={index}>{achievement}</li>
-                    ))}
-                  </ul>
-                  
+                  <ul>{c.achievements.map((a, i) => <li key={i}>{a}</li>)}</ul>
+
                   <h4>Challenges Faced</h4>
-                  <ul>
-                    {competition.challenges.map((challenge, index) => (
-                      <li key={index}>{challenge}</li>
-                    ))}
-                  </ul>
-                  
+                  <ul>{c.challenges.map((ch, i) => <li key={i}>{ch}</li>)}</ul>
+
                   <h4>Impact</h4>
-                  <ul>
-                    <li>{competition.impact}</li>
-                  </ul>
+                  <ul><li>{c.impact}</li></ul>
                 </div>
               </div>
             ))}
           </div>
-
-          {/* Competition Stats */}
-          <div className="section" style={{ padding: '60px 0 0 0' }}>
-            <div className="container">
-              <h2>Competition Statistics</h2>
-              <div className="stats">
-                {competitionsData.stats.map((stat, index) => (
-                  <div key={index} className="stat-card">
-                    <div className="stat-icon">{stat.icon}</div>
-                    <div className="stat-number">{stat.number}</div>
-                    <div className="stat-label">{stat.label}</div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
         </div>
       </div>
 
-      {/* Footer */}
       <Footer />
     </div>
   )
