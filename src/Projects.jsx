@@ -1,40 +1,34 @@
 import { useState } from 'react'
-import { useTheme } from './features/ThemeContext.jsx'
 import Navbar from './components/Navbar.jsx'
 import Footer from './components/Footer.jsx'
 import SEO from './components/SEO.jsx'
 import { projectsData } from './data/projectsData.jsx'
 
 function Projects({ setCurrentPage }) {
-  const { isDarkMode, toggleTheme } = useTheme()
   const [activeTab, setActiveTab] = useState('current')
   const [expandedCards, setExpandedCards] = useState(new Set())
 
-  const toggleCardExpansion = (cardId) => {
-    const newExpanded = new Set(expandedCards)
-    if (newExpanded.has(cardId)) {
-      newExpanded.delete(cardId)
-    } else {
-      newExpanded.add(cardId)
-    }
-    setExpandedCards(newExpanded)
+  const toggleCardExpansion = (id) => {
+    const next = new Set(expandedCards)
+    next.has(id) ? next.delete(id) : next.add(id)
+    setExpandedCards(next)
   }
 
-  const projects = activeTab === 'current' ? projectsData.currentProjects : projectsData.pastProjects
+  const projects =
+    activeTab === 'current'
+      ? projectsData.currentProjects
+      : projectsData.pastProjects
 
   return (
     <div>
-      <SEO 
-        title="Projects - Aerove | Wildlife Conservation, Solar Inspection & SLAM"
-        description="Explore Aerove's innovative drone technology projects including WWF wildlife conservation, solar PV farm inspection, advanced SLAM navigation, and award-winning competition drones."
-        keywords="Aerove projects, WWF drone conservation, solar panel inspection drone, SLAM navigation, JATAYU quadcopter, VTOL drone, autonomous navigation"
+      <SEO
+        title="Projects | Team AeRoVe, IIT Bombay"
+        description="Autonomous aerial robotics projects by Team AeRoVe including VTOL UAVs, vision-based navigation, SLAM and robust perception research."
         url="https://aerove-jet.vercel.app/#projects"
       />
-      
-      {/* Navigation */}
+
       <Navbar setCurrentPage={setCurrentPage} activePage="projects" />
 
-      {/* Projects Page Content */}
       <div className="projects-page">
         <div className="container">
           <div className="projects-header">
@@ -43,13 +37,13 @@ function Projects({ setCurrentPage }) {
           </div>
 
           <div className="projects-tabs">
-            <button 
+            <button
               className={`tab-button ${activeTab === 'current' ? 'active' : ''}`}
               onClick={() => setActiveTab('current')}
             >
               Current Work
             </button>
-            <button 
+            <button
               className={`tab-button ${activeTab === 'past' ? 'active' : ''}`}
               onClick={() => setActiveTab('past')}
             >
@@ -58,47 +52,35 @@ function Projects({ setCurrentPage }) {
           </div>
 
           <div className="projects-grid">
-            {projects.map(project => (
-              <div key={project.id} className="project-card">
-                <div className="project-image">{project.image}</div>
-                <div className="project-title">{project.title}</div>
-                <div className="project-description">{project.description}</div>
-                
-                <div className={`project-details ${expandedCards.has(project.id) ? 'expanded' : ''}`}>
+            {projects.map(p => (
+              <div key={p.id} className="project-card">
+                <div className="project-image">{p.image}</div>
+                <div className="project-title">{p.title}</div>
+                <div className="project-description">{p.description}</div>
+
+                <div className={`project-details ${expandedCards.has(p.id) ? 'expanded' : ''}`}>
                   <h4>Project Details</h4>
                   <ul>
-                    <li><strong>Status:</strong> {project.status}</li>
-                    <li><strong>Team:</strong> {project.team}</li>
-                    <li><strong>Timeline:</strong> {project.timeline}</li>
+                    <li><strong>Status:</strong> {p.status}</li>
+                    <li><strong>Subsystem:</strong> {p.team}</li>
+                    <li><strong>Timeline:</strong> {p.timeline}</li>
                   </ul>
-                  
+
                   <h4>Technologies Used</h4>
-                  <ul>
-                    {project.technologies.map((tech, index) => (
-                      <li key={index}>{tech}</li>
-                    ))}
-                  </ul>
-                  
+                  <ul>{p.technologies.map((t, i) => <li key={i}>{t}</li>)}</ul>
+
                   <h4>Key Challenges</h4>
-                  <ul>
-                    {project.challenges.map((challenge, index) => (
-                      <li key={index}>{challenge}</li>
-                    ))}
-                  </ul>
-                  
+                  <ul>{p.challenges.map((c, i) => <li key={i}>{c}</li>)}</ul>
+
                   <h4>Achievements</h4>
-                  <ul>
-                    {project.achievements.map((achievement, index) => (
-                      <li key={index}>{achievement}</li>
-                    ))}
-                  </ul>
+                  <ul>{p.achievements.map((a, i) => <li key={i}>{a}</li>)}</ul>
                 </div>
-                
-                <button 
+
+                <button
                   className="learn-more-btn"
-                  onClick={() => toggleCardExpansion(project.id)}
+                  onClick={() => toggleCardExpansion(p.id)}
                 >
-                  {expandedCards.has(project.id) ? '🔽 Show Less' : '🔼 Learn More'}
+                  {expandedCards.has(p.id) ? '🔽 Show Less' : '🔼 Learn More'}
                 </button>
               </div>
             ))}
@@ -106,7 +88,6 @@ function Projects({ setCurrentPage }) {
         </div>
       </div>
 
-      {/* Footer */}
       <Footer />
     </div>
   )

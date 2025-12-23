@@ -2146,15 +2146,39 @@ html {
   background: var(--card-hover);
 }
 
+/* ===============================
+   ALUMNI PHOTO – FINAL FIX
+   =============================== */
+
 .alumni-photo {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  margin: 0 auto 20px;
-  position: relative;
-  overflow: hidden;
-  border: 4px solid var(--accent-primary);
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 20px;
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+    /* IMPORTANT */
+    background-color: var(--card-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+    .alumni-photo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        display: block;
+        /* 🔥 THIS LINE KILLS THE BLACK RING */
+        transform: scale(1.45);
+        border: none;
+        padding: 0;
+        margin: 0;
+    }
+
+
+   
 
 .batch-badge {
   position: absolute;
