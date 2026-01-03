@@ -1,5 +1,5 @@
 
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, HashRouter, Routes, Route } from 'react-router-dom'
 import { ThemeProvider } from './features/ThemeContext.jsx'
 
 import Home from './Home.jsx'
@@ -8,10 +8,13 @@ import Projects from './Projects.jsx'
 import Competitions from './Competitions.jsx'
 import Alumni from './Alumni.jsx'
 
+// Use HashRouter for GitHub Pages, BrowserRouter for Vercel
+const Router = import.meta.env.BASE_URL === '/aerove/' ? HashRouter : BrowserRouter
+
 function App() {
   return (
     <ThemeProvider>
-      <BrowserRouter basename={import.meta.env.BASE_URL}>
+      <Router>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/team" element={<Team />} />
@@ -19,7 +22,7 @@ function App() {
           <Route path="/competitions" element={<Competitions />} />
           <Route path="/alumni" element={<Alumni />} />
         </Routes>
-      </BrowserRouter>
+      </Router>
     </ThemeProvider>
   )
 }
