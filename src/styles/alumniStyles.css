@@ -1,13 +1,7 @@
-﻿.alumni-page {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+﻿#alumni {
+    padding-top: 100px;
+    padding-bottom: 3rem;
 }
-
-    .alumni-page.dark {
-        background-color: var(--bg-dark);
-        color: var(--text-light);
-    }
 
 .alumni-title {
     text-align: center;
@@ -61,7 +55,6 @@
     padding: 2rem;
     margin-bottom: 2rem;
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-    transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
 }
@@ -74,13 +67,6 @@
         width: 4px;
         height: 100%;
         background: linear-gradient( to bottom, var(--primary), var(--primary-dark) );
-    }
-
-    .alumni-card:hover {
-        transform: translateY(-5px) scale(1.02);
-        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04), 0 0 20px rgba(66, 134, 244, 0.35);
-        background: color-mix(in srgb, var(--card-bg) 95%, var(--primary));
-        z-index: 1;
     }
 
 /* ===== PHOTO (ABSOLUTELY NO RING) ===== */

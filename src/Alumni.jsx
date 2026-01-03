@@ -9,7 +9,7 @@ function Alumni({ setCurrentPage }) {
   const { isDarkMode } = useTheme()
 
   return (
-    <div className={`alumni-page ${isDarkMode ? 'dark' : ''}`}>
+    <div>
       <SEO
         title="Alumni | Team AeRoVe, IIT Bombay"
         description="AeRoVe alumni have gone on to pursue careers and higher studies at leading global organizations and universities."
@@ -18,7 +18,7 @@ function Alumni({ setCurrentPage }) {
 
       <Navbar setCurrentPage={setCurrentPage} activePage="alumni" />
 
-      <section id="alumni">
+      <section id="alumni" className="section">
         <div className="container">
           <h1 className="alumni-title">{alumniData.title}</h1>
           <p className="alumni-subtitle">{alumniData.subtitle}</p>

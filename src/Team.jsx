@@ -6,7 +6,7 @@ import SEO from './components/SEO.jsx'
 import { teamData } from './data/teamData.jsx'
 
 function Team({ setCurrentPage }) {
-  const { isDarkMode, toggleTheme } = useTheme()
+  const { isDarkMode } = useTheme()
 
   return (
     <div>

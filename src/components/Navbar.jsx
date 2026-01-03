@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import { useTheme } from '../features/ThemeContext.jsx'
 
 function Navbar({ setCurrentPage, activePage }) {
@@ -16,38 +17,44 @@ function Navbar({ setCurrentPage, activePage }) {
   return (
     <nav className="navbar">
       <div className="nav-container">
-        <a href="#home" className="logo" onClick={() => setCurrentPage('home')}>
-          <div className="logo-icon"><img src="/AEROVE.png" alt="aerove logo" /></div>
+        <Link to="/" className="logo">
+          <div className="logo-icon">
+            <img src="/AEROVE.png" alt="Aerove logo" />
+          </div>
           Aerove
-        </a>
-        
+        </Link>
+
         {/* Desktop Menu */}
         <ul className="nav-menu">
           {navItems.map(item => (
             <li key={item.id}>
-              <a
-                href={item.href}
+              <Link
+                to={item.id === 'home' ? '/' : `/${item.id}`}
                 className={activePage === item.id ? 'active' : ''}
-                onClick={() => setCurrentPage(item.id)}
               >
                 <i>{item.icon}</i>{item.label}
-              </a>
+              </Link>
             </li>
           ))}
+          <li>
+            <button 
+              onClick={toggleTheme} 
+              className="theme-toggle"
+              aria-label="Toggle theme"
+              style={{background: 'none', border: 'none', cursor: 'pointer', fontSize: '1.5rem', padding: '0.5rem'}}
+            >
+              {isDarkMode ? '☀️' : '🌙'}
+            </button>
+          </li>
         </ul>
 
-        {/* Mobile buttons container */}
-        <div className="mobile-toggle-container">
-          <button className="theme-toggle mobile-toggle" onClick={toggleTheme}>
-            {isDarkMode ? '☀️' : '🌙'}
-          </button>
-          <button
-            className="mobile-menu-btn"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-          >
-            ☰
-          </button>
-        </div>
+        {/* Mobile Menu Button */}
+        <button
+          className="mobile-menu-btn"
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+        >
+          ☰
+        </button>
       </div>
 
       {/* Mobile Menu */}
@@ -56,15 +63,25 @@ function Navbar({ setCurrentPage, activePage }) {
           <ul>
             {navItems.map(item => (
               <li key={item.id}>
-                <a 
-                  href={item.href} 
+                <Link
+                  to={item.id === 'home' ? '/' : `/${item.id}`}
                   className={activePage === item.id ? 'active' : ''}
-                  onClick={() => setCurrentPage(item.id)}
+                  onClick={() => setIsMenuOpen(false)}
                 >
                   {item.icon} {item.label}
-                </a>
+                </Link>
               </li>
             ))}
+            <li>
+              <button 
+                onClick={toggleTheme} 
+                className="theme-toggle-mobile"
+                aria-label="Toggle theme"
+                style={{background: 'none', border: 'none', cursor: 'pointer', fontSize: '1rem', padding: '0.75rem', width: '100%', textAlign: 'left'}}
+              >
+                {isDarkMode ? '☀️ Light Mode' : '🌙 Dark Mode'}
+              </button>
+            </li>
           </ul>
         </div>
       )}
