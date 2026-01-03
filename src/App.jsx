@@ -11,7 +11,7 @@ import Alumni from './Alumni.jsx'
 function App() {
   return (
     <ThemeProvider>
-      <BrowserRouter>
+      <BrowserRouter basename={import.meta.env.BASE_URL}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/team" element={<Team />} />

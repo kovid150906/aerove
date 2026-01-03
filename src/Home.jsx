@@ -5,6 +5,11 @@ import { homeData } from './data/homeData.jsx'
 import DroneHeroScene from './canvas/DroneHeroScene.jsx'
 import { Link } from 'react-router-dom'
 
+const getAssetUrl = (path) => {
+  const base = import.meta.env.BASE_URL || '/';
+  return `${base}${path.startsWith('/') ? path.slice(1) : path}`;
+};
+
 export default function Home() {
   return (
     <>
@@ -42,7 +47,7 @@ export default function Home() {
           }}
         >
           <img 
-            src="/UMIC.png" 
+            src={getAssetUrl('UMIC.png')} 
             alt="UMIC Logo" 
             style={{
               height: 'clamp(35px, 5vw, 60px)',
@@ -51,7 +56,7 @@ export default function Home() {
             }}
           />
           <img 
-            src="/IITB-logo.png" 
+            src={getAssetUrl('IITB-logo.png')} 
             alt="IIT Bombay Logo" 
             style={{
               height: 'clamp(35px, 5vw, 60px)',
@@ -98,7 +103,7 @@ export default function Home() {
         >
           <div style={{ maxWidth: '640px', pointerEvents: 'auto' }}>
             <img 
-              src="/AEROVE.png" 
+              src={getAssetUrl('AEROVE.png')} 
               alt="Aerove" 
               style={{
                 maxWidth: '220px',
