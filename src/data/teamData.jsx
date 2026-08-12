@@ -45,6 +45,14 @@ export const teamData = {
       social: { instagram: "https://www.instagram.com/43premansh", linkedin: "https://www.linkedin.com/in/43premansh" }
     },
     {
+      id: 8,
+      name: "Dhruv",
+      role: "Manager",
+      department: "Management",
+      avatar: "photos_26-27/Dhruv.jpg",
+      social: { instagram: "https://www.instagram.com/dhruv_jadhav_45", linkedin: "https://www.linkedin.com/in/dhruv-jadhav-b95407318" }
+    },
+    {
       id: 5,
       name: "Sambhav",
       role: "Subsystem Lead",
@@ -93,14 +101,7 @@ export const teamData = {
       avatar: "photos_26-27/AaravGupta.jpg",
       social: { instagram: "#", linkedin: "https://www.linkedin.com/in/aarav-gupta-128282202/" }
     },
-    {
-      id: 8,
-      name: "Dhruv",
-      role: "Senior Engineer",
-      department: "Aerodynamics Subsystem",
-      avatar: "photos_26-27/Dhruv.jpg",
-      social: { instagram: "https://www.instagram.com/dhruv_jadhav_45", linkedin: "https://www.linkedin.com/in/dhruv-jadhav-b95407318" }
-    },
+    
     {
       id: 11,
       name: "Basant",
