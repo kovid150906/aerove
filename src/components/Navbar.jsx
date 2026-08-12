@@ -14,6 +14,7 @@ function Navbar({ setCurrentPage, activePage }) {
   const navItems = [
     { id: 'home', label: 'Home', icon: '🏠', href: '#home' },
     { id: 'team', label: 'Team', icon: '👥', href: '#team' },
+    { id: 'subsystems', label: 'Subsystems', icon: '⚙️', href: '#subsystems' },
     { id: 'projects', label: 'Projects', icon: '📋', href: '#projects' },
     { id: 'competitions', label: 'Competitions', icon: '🏆', href: '#competitions' },
     { id: 'alumni', label: 'Alumni', icon: '🎓', href: '#alumni' }

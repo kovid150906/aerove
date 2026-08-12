@@ -139,6 +139,7 @@ export default function Home() {
               <Link to="/projects" className="btn btn-secondary">
                 Projects
               </Link>
+              
             </div>
           </div>
         </div>
