@@ -3,6 +3,12 @@ import { useGLTF, Center } from '@react-three/drei'
 import { Suspense, useRef, useEffect, useState } from 'react'
 import * as THREE from 'three'
 
+// Helper to get correct asset path for both Vercel and GitHub Pages
+const getAssetUrl = (path) => {
+  const base = import.meta.env.BASE_URL || '/';
+  return `${base}${path.startsWith('/') ? path.slice(1) : path}`;
+};
+
 /* =========================
    GROUND SHADOW
 ========================= */
@@ -34,7 +40,7 @@ function GroundShadow({ isMobile }) {
 ========================= */
 function DroneModel({ pointer, isMobile }) {
   const ref = useRef()
-  const { scene } = useGLTF('/models/drone.glb')
+  const { scene } = useGLTF(getAssetUrl('models/drone.glb'))
 
   useEffect(() => {
     scene.traverse((child) => {

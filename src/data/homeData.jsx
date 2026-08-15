@@ -15,7 +15,8 @@ export const homeData = {
         icon: "👥",
         href: "#team",
         type: "secondary"
-      }
+      },
+     
     ]
   },
   stats: [

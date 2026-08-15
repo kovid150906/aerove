@@ -5,6 +5,61 @@ export const competitionsData = {
 
   competitions: [
     {
+      id: 6, // Make sure to update this ID based on the last ID in your file
+      name: "IRoC-U 2025",
+      year: "2025",
+      location: "UR Rao Satellite Centre (URSC), Bengaluru, India",
+      status: "Completed",
+      description: "An autonomous Navigation system for Aerial Vehicles (ANAV) designed to explore a simulated Martian environment without external navigation aids like GPS.",
+      image: "🛸",
+      achievements: [
+        "Reached the penultimate round among 1600 participating teams",
+        "Autonomously mapped a 30 ft × 40 ft arena for hazard-free landing zones",
+        "Executed stable vertical takeoffs, precise waypoint navigation, and sequential multi-landing operations"
+      ],
+      challenges: [
+        "Low-drift visual-inertial state estimation under constrained compute",
+        "Severe SWaP limitations for sloped terrain landing mechanism",
+        "Short 4.5-minute flight endurance on a 2200mAh 4S LiPo battery"
+      ],
+      technologies: [
+        "Nvidia Jetson Nano & Cubepilot Orange Cube (PX4)",
+        "ZED2 Stereo Camera with ORB-SLAM3",
+        "RTAB-Map 3D Occupancy Grids",
+        "OpenCV Boundary-Following & Boustrophedon Sweep",
+        "4-bar Parallel Linkage Landing Mechanism"
+      ],
+      results: "Penultimate Round (Top 1600 Teams)",
+      impact: "Demonstrated advanced autonomous flight and mapping capabilities necessary for extra-terrestrial aerial exploration."
+    },
+    {
+      id: 7, // Make sure to update this ID as well
+      name: "SUAS 2025",
+      year: "2025",
+      location: "St. Mary's County Regional Airport, California, Maryland, USA",
+      status: "Completed",
+      description: "A portable Unmanned Aerial System weighing under 35 lbs built to execute a multi-faceted autonomous mission within a 30-minute window.",
+      image: "🛩️",
+      achievements: [
+        "Built sub-35 lbs portable system fitting standard flight luggage",
+        "Engineered delivery mechanism dropping 4 payloads within 20 ft target radius from >75 ft height",
+        "Mapped 15-acre area over 15-mile flight path and detected airport-debris targets"
+      ],
+      challenges: [
+        "Balancing camera resolution with overall payload mass under strict weight limits",
+        "Maximizing endurance for 15-mile flight within strict 100Wh battery limit",
+        "Unifying mechanical sub-assemblies, flight controls, image processing, and sensor payloads"
+      ],
+      technologies: [
+        "Lightweight Object Detection Models",
+        "Custom Motor-Driven Pulley Mechanism",
+        "Lightweight LiDAR & Real-Time Obstacle Avoidance",
+        "100Wh Modular Battery Housing"
+      ],
+      results: "Mission Completed successfully",
+      impact: "Successfully integrated a transportable airframe capable of dynamic hazard navigation alongside other aircraft with minimal operator reliance."
+    },
+    {
       id: 1,
       name: "Ri4Rover 2024 (Drone Class)",
       year: "2024",
@@ -147,7 +202,7 @@ export const competitionsData = {
         "Advancement Award, Design Award, Scrutineers Award",
       impact:
         "International recognition for UAV design quality and execution."
-    }
+    },
   ],
 
   stats: [
