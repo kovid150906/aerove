@@ -53,6 +53,14 @@ export const teamData = {
       social: { instagram: "https://www.instagram.com/dhruv_jadhav_45", linkedin: "https://www.linkedin.com/in/dhruv-jadhav-b95407318" }
     },
     {
+      id:200,
+      name: "Vijay",
+      role: "Manager",
+      department : 'Management',
+      avatar : "photos_26-27/Vijay.jpg",
+      social : {instagram : "#" , linkedin : "https://www.linkedin.com/in/vijay-patekar-91598b372"}
+    },
+    {
       id: 5,
       name: "Sambhav",
       role: "Subsystem Lead",
