@@ -57,7 +57,7 @@ export const teamData = {
       name: "Vijay",
       role: "Manager",
       department : 'Management',
-      avatar : "photos_26-27/Vijay.jpg",
+      avatar : "photos_26-27/Vijay.jpeg",
       social : {instagram : "#" , linkedin : "https://www.linkedin.com/in/vijay-patekar-91598b372"}
     },
     {
